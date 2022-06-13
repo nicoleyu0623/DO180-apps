@@ -9,8 +9,13 @@ DO180 Repository for Sample Applications
 - Podman uses CNI (container network interface) to create SDN 
 and attaches containers on the host to that network. 
 
+BuildConfig (BC)
+- compile source code, download library dependencies
+- package the application as a container image 
+- push the image into the registry for the deployment step
 
-
-
+Deployment step
+- start the pod and making the application available
+- only if the build step succeeded. 
 
 
